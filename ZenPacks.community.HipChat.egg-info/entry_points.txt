@@ -1,0 +1,3 @@
+[zenoss.zenpacks]
+ZenPacks.community.HipChat = ZenPacks.community.HipChat
+
