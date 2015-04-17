@@ -1,10 +1,10 @@
 Metadata-Version: 1.0
 Name: ZenPacks.community.HipChat
 Version: 1.0.0
-Summary: UNKNOWN
+Summary: Provides a HipChat notification option for Zenoss 
 Home-page: UNKNOWN
 Author: James Regovich
-Author-email: UNKNOWN
+Author-email: jregovic@rego.org 
 License: GPLv2
 Description: UNKNOWN
 Platform: UNKNOWN
