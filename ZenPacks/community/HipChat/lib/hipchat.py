@@ -4,7 +4,7 @@
 #!/usr/bin/env python
 import json
 import httplib2
-import socks
+from ZenPacks.community.HipChat.lib import socks
 from urlparse import urlparse
 
 def sendHipChat(hipChatUrl='http://www.hipchat.com',proxyUrl=None,proxyUsername=None,proxyPassword=None,**data):

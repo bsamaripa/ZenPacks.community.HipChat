@@ -15,16 +15,11 @@ ZenPacks/community/__init__.py
 ZenPacks/community/__init__.pyc
 ZenPacks/community/HipChat/LICENSE.txt
 ZenPacks/community/HipChat/__init__.py
-ZenPacks/community/HipChat/__init__.pyc
 ZenPacks/community/HipChat/configure.zcml
 ZenPacks/community/HipChat/info.py
-ZenPacks/community/HipChat/info.pyc
 ZenPacks/community/HipChat/interfaces.py
-ZenPacks/community/HipChat/interfaces.pyc
 ZenPacks/community/HipChat/actions/__init__.py
-ZenPacks/community/HipChat/actions/__init__.pyc
 ZenPacks/community/HipChat/actions/hipchat.py
 ZenPacks/community/HipChat/lib/__init__.py
-ZenPacks/community/HipChat/lib/__init__.pyc
 ZenPacks/community/HipChat/lib/hipchat.py
 ZenPacks/community/HipChat/objects/objects.xml
