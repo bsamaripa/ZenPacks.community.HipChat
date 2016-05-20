@@ -22,4 +22,5 @@ ZenPacks/community/HipChat/actions/__init__.py
 ZenPacks/community/HipChat/actions/hipchat.py
 ZenPacks/community/HipChat/lib/__init__.py
 ZenPacks/community/HipChat/lib/hipchat.py
+ZenPacks/community/HipChat/lib/socks.py
 ZenPacks/community/HipChat/objects/objects.xml
