@@ -17,4 +17,5 @@ class HipChatActionContentInfo(ActionContentInfo):
     proxyUrl = ActionFieldProperty(IHipChatActionContentInfo, 'proxyUrl')
     proxyUsername = ActionFieldProperty(IHipChatActionContentInfo, 'proxyUsername')
     proxyPassword = ActionFieldProperty(IHipChatActionContentInfo, 'proxyPassword')
+    message_body = ActionFieldProperty(IHipChatActionContentInfo, 'message_body')
 

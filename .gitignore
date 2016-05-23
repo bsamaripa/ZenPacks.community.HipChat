@@ -1,3 +1,4 @@
 *.pyc
 build/*
 dist/*
+*/*PKG-INFO*
