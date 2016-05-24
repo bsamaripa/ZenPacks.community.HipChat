@@ -34,6 +34,7 @@ class HipChatAction(IActionBase, TargetableAction):
             notification,
             self.guidManager
         )
+	log.info('Event context :: %s' %(data.as_string()))
 	message_body = processTalSource(notification.content['message_body'], **data)
 	sendHipChat(message_body,data['evt'].severity,notification.content['hipChatUrl'],notification.content['proxyUrl'],notification.content['proxyUsername'],notification.content['proxyPassword'])
 

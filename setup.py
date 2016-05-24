@@ -3,7 +3,7 @@
 # or saved.  Do not modify them directly here.
 # NB: PACKAGES is deprecated
 NAME = "ZenPacks.community.HipChat"
-VERSION = "1.0.1dev"
+VERSION = "2.0.0dev"
 AUTHOR = "James Regovich"
 LICENSE = "GPLv2"
 NAMESPACE_PACKAGES = ['ZenPacks', 'ZenPacks.community']
