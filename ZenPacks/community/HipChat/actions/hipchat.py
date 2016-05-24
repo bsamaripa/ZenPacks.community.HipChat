@@ -34,7 +34,9 @@ class HipChatAction(IActionBase, TargetableAction):
             notification,
             self.guidManager
         )
-	sendHipChat(notification.content['hipChatUrl'],notification.content['proxyUrl'],notification.content['proxyUsername'],notification.content['proxyPassword'],**data)
+
+	message_body = processTalSource(notification.content['message_body'], **data)
+	sendHipChat(message_body,data['evt'].severity,notification.content['hipChatUrl'],notification.content['proxyUrl'],notification.content['proxyUsername'],notification.content['proxyPassword'])
 
 
     def getActionableTargets(self, target):
@@ -77,6 +79,7 @@ class HipChatAction(IActionBase, TargetableAction):
             'proxyUrl',
             'proxyUsername',
             'proxyPassword',
+	    'message_body',
         ]
 	
         for k in properties:

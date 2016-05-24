@@ -12,7 +12,7 @@ except ImportError:
 from Products.Zuul.interfaces import IFacade
 from Products.Zuul.form import schema
 from Products.Zuul.utils import ZuulMessageFactory as _t
-
+import textwrap
 
 class IHipChatActionContentInfo(IActionContentInfo):
 
@@ -36,3 +36,20 @@ class IHipChatActionContentInfo(IActionContentInfo):
         order=120,
     )
 
+    message_body = schema.Text(
+	title=_t(u'Message Body'),
+	description = _t(u'The template for the HipChat message'),
+	order=130,
+	default     = textwrap.dedent(text = u'''
+        Device: ${evt/device}
+        Component: ${evt/component}
+        Severity: ${evt/severity}
+        Time: ${evt/lastTime}
+        Message:
+        ${evt/message}
+        <a href="${urls/eventUrl}">Event Detail</a>
+        <a href="${urls/ackUrl}">Acknowledge</a>
+        <a href="${urls/closeUrl}">Close</a>
+        <a href="${urls/eventsUrl}">Device Events</a>
+        ''')
+    )
